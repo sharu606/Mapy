@@ -19,6 +19,7 @@ function Login() {
   const ctx = useContext(AuthContext);
   const navigate = useNavigate();
   const { data } = useQuery("users", fetchData);
+  let temp = false;
 
   function loginHandler() {
     if (!username) {
@@ -35,10 +36,11 @@ function Login() {
         localStorage.setItem("auth", true);
         navigate("home/add-map", { replace: true });
         ctx.setAuth(true);
+        temp = true;
       }
     });
 
-    if (!ctx.authStatus) {
+    if (!temp) {
       setError("Invalid Username or Password");
     }
   }

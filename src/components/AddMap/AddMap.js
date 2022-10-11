@@ -74,7 +74,7 @@ function AddMap() {
       <div className={classes.maps}>
         {mapCtx.maps.length > 0 &&
           mapCtx.maps.map((url) => (
-            <div className={classes.t}>
+            <div className={classes.t} key={url}>
               <div className={classes.mapWrap}>
                 <BsStar
                   className={classes.star}
