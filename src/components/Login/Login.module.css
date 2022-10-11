@@ -1,0 +1,25 @@
+.ip-field {
+  border-radius: 16px;
+  border: var(--blue) 2px solid;
+  padding: 3px;
+  width: 500px;
+}
+
+.ip-field:focus {
+  outline: none;
+}
+
+.ip-checkbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+  width: 100%;
+}
+
+.error {
+  position: absolute;
+  bottom: 0;
+  width: 550px;
+  text-align: center;
+}

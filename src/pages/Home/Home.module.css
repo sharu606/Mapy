@@ -1,0 +1,29 @@
+.logout {
+  width: 150px;
+}
+
+.nav {
+  border: 1px solid #ccc;
+}
+
+.left {
+  background-color: var(--blue);
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.links {
+  color: var(--white);
+}
+
+.active {
+  border-bottom: 4px solid var(--white);
+}
+
+.links:hover {
+  color: var(--white);
+  text-decoration: none;
+}
