@@ -41,6 +41,15 @@ function AddMap() {
   }
 
   function starHandler(url) {
+    toast.info("Restaurant has been moved to bookmarks page", {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
     deleteHandler(url);
     mapCtx.setBookmarks((prev) => prev.concat(url));
   }
